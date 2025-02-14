@@ -4,9 +4,44 @@
  <title>Lab4 – Exercise 2</title>
 </head>
 <body>
- <h1>JavaScript Lab</h1>
- <script>
- // Write your JavaScript code here
+    <h1>JavaScript Lab</h1>
+    <script>
+    // Declaring Functions
+    /*
+        function add(a, b){
+            return a + b;
+        }
+        function subtract(a, b){
+            return a - b;
+        }
+    */
+
+    // Using Default Parameters
+    /*
+        function add(a, b=0){
+            return a + b;
+        }
+        function subtract(a, b=1){
+            return a - b;
+        }
+    */
+
+    // Implementing Arrow Functions
+        let add = (a, b=0) => a+b;
+        let subtract = (a, b=1) => a-b;
+        let multiply = (a,b) => a*b;
+        let divide = (a,b) => {
+            if (b != 0)
+                return a / b;
+            else
+                console.log("Invalid Argument. Division by Zero is not permitted")
+                return null
+        }
+    // Understanding Callback Functions
+
+        function calculator(a, b, operation){
+            return operation(a,b)
+        }
  </script>
 </body>
 </html>
