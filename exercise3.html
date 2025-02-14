@@ -4,9 +4,52 @@
  <title>Lab4 – Exercise 3</title>
 </head>
 <body>
- <h1>JavaScript Lab</h1>
- <script>
- // Write your JavaScript code here
- </script>
+    <h1>JavaScript Lab</h1>
+    <script>
+    // Arrays and Basic Methods
+    let classRoster = ["Alice", "Tom", "Charlie", "Diana", "Evan"];
+    console.log(classRoster.toString());
+    console.log(classRoster);
+    classRoster.push("Fiona");
+    classRoster.push("Nancy");
+    classRoster.shift();
+    console.log(classRoster);
+    console.log(classRoster.length);
+
+    // Objects with Nested Structures
+    let classInfo = {
+        className: "ENSF381: Full-Stack Web Development",
+        instructor: "Dr. Smith",
+        students: classRoster,
+        details: {
+            semester: 'Winter',
+            year: 2025,
+        },
+    };
+
+    classInfo.schedule = ["Monday", "Wednesday", "Friday"];
+    classInfo.instructor = "Dr. Abdellatif";
+    console.log(classInfo.className);
+    console.log(classInfo.instructor);
+    console.log(classInfo.students);
+    console.log(classInfo.details.semester);
+    console.log(classInfo);
+    let name = classInfo.className;
+    let studentlist = classInfo.students;
+    console.log(name);
+    console.log(studentlist);
+    let sem = classInfo.details.semester;
+    let yr = classInfo.details.year;
+    console.log(sem);
+    console.log(yr);
+    let student1 = classInfo.students[0];
+    let student2 = classInfo.students[1];
+    let remainingStudents = [... classInfo.students];
+    remainingStudents.shift();
+    remainingStudents.shift();
+    console.log(student1);
+    console.log(student2);
+    console.log(remainingStudents);
+    </script>
 </body>
 </html>
