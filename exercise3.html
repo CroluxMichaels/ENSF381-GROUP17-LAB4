@@ -42,11 +42,7 @@
     let yr = classInfo.details.year;
     console.log(sem);
     console.log(yr);
-    let student1 = classInfo.students[0];
-    let student2 = classInfo.students[1];
-    let remainingStudents = [... classInfo.students];
-    remainingStudents.shift();
-    remainingStudents.shift();
+    const [student1, student2, ...remainingStudents] = classInfo.students;
     console.log(student1);
     console.log(student2);
     console.log(remainingStudents);
