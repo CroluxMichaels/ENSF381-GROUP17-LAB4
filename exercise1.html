@@ -6,7 +6,28 @@
 <body>
  <h1>JavaScript Lab</h1>
  <script>
- // Write your JavaScript code here
+ // Variable Declaration 
+ 
+ let a = 1;
+ let b = 2;
+ const c = 3;
+ a = 4;
+ // c = 5;
+
+
+ // Working with Dates
+
+ let myDate = new Date();
+ console.log(myDate);
+ let myYear = myDate.getFullYear();
+ console.log(myYear);
+ let myMonth = myDate.getMonth();
+ console.log(myMonth);
+ let myDayOfWeek = myDate.getDay();
+ console.log(myDayOfWeek);
+ var Weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+ let Weekday = Weekdays[myDayOfWeek];
+ console.log(Weekday);
  </script>
 </body>
 </html>
